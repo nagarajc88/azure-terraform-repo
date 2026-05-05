@@ -1,0 +1,21 @@
+my-terraform-project/
+│
+├── main.tf              # Core resources and provider configs
+├── variables.tf         # Input variables
+├── outputs.tf           # Output values
+├── terraform.tfvars     # Variable values (excluded from VCS if sensitive)
+├── backend.tf           # Remote state configuration (optional)
+│
+├── modules/             # Reusable modules
+│   ├── network/         # Example: VPC, subnets
+│   ├── compute/         # Example: EC2, VM instances
+│   └── storage/         # Example: S3, Blob storage
+│
+└── environments/        # Separate configs per environment
+    ├── dev/
+    │   └── main.tf
+    ├── staging/
+    │   └── main.tf
+    └── prod/
+        └── main.tf
+
